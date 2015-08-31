@@ -2,7 +2,7 @@ window.initializeMap = function(){
   $(document).ready(function() {
     var ctaLayer, followMeeURL, gmapURL, map, mapElement, options;
     followMeeURL = "https://www.followmee.com/api/tracks.aspx?key=4915631036dcae1188bad47ababc6353&username=fullcircle&output=kml&function=currentfordevice&deviceid=10993763";
-    gmapURL = 'https://gist.githubusercontent.com/Ravenstine/a3b18c71942a812b5b11/raw/050d592f4c2b1f9697175dba58260d132f93c769/testmap.kml';
+    gmapURL = 'https://rawgit.com/Ravenstine/project-full-circle/master/double-plus-good.kmz?raw=true';
     options = {
       zoom: 3,
       center: {
