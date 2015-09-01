@@ -1,4 +1,4 @@
-window.initializeMap = function(){
+initializeMap = function(){
   $(document).ready(function() {
     var ctaLayer, followMeeURL, gmapURL, map, mapElement, options;
     followMeeURL = "https://www.followmee.com/api/tracks.aspx?key=4915631036dcae1188bad47ababc6353&username=fullcircle&output=kml&function=currentfordevice&deviceid=10993763";

@@ -7,7 +7,7 @@
       <name>Route</name>
       <Placemark>
         <name>Malaysia</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -16,7 +16,7 @@
       </Placemark>
       <Placemark>
         <name>Lhasa</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -25,7 +25,7 @@
       </Placemark>
       <Placemark>
         <name>Iran</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -54,7 +54,7 @@
       </Placemark>
       <Placemark>
         <name>Bangkok</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -73,7 +73,7 @@
       </Placemark>
       <Placemark>
         <name>Ho Chi Minh City</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -92,7 +92,7 @@
       </Placemark>
       <Placemark>
         <name>Hanoi</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -111,7 +111,7 @@
       </Placemark>
       <Placemark>
         <name>Hong Kong</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -130,7 +130,7 @@
       </Placemark>
       <Placemark>
         <name>Shanghai</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -149,7 +149,7 @@
       </Placemark>
       <Placemark>
         <name>Osaka</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -158,7 +158,7 @@
       </Placemark>
       <Placemark>
         <name>Tokyo</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -167,7 +167,7 @@
       </Placemark>
       <Placemark>
         <name>Seoul</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -176,7 +176,7 @@
       </Placemark>
       <Placemark>
         <name>Beijing</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -215,7 +215,7 @@
       </Placemark>
       <Placemark>
         <name>Lhasa</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -224,7 +224,7 @@
       </Placemark>
       <Placemark>
         <name>Kathmandu</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -233,7 +233,7 @@
       </Placemark>
       <Placemark>
         <name>New Delhi</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -242,7 +242,7 @@
       </Placemark>
       <Placemark>
         <name>Tehran</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -251,7 +251,7 @@
       </Placemark>
       <Placemark>
         <name>Dubai</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -260,7 +260,7 @@
       </Placemark>
       <Placemark>
         <name>Cairo</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -269,7 +269,7 @@
       </Placemark>
       <Placemark>
         <name>Athens</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -278,7 +278,7 @@
       </Placemark>
       <Placemark>
         <name>İstanbul</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -287,7 +287,7 @@
       </Placemark>
       <Placemark>
         <name>Budapest</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -296,7 +296,7 @@
       </Placemark>
       <Placemark>
         <name>Moscow</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -305,7 +305,7 @@
       </Placemark>
       <Placemark>
         <name>Helsinki</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -314,7 +314,7 @@
       </Placemark>
       <Placemark>
         <name>Stockholm</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -323,7 +323,7 @@
       </Placemark>
       <Placemark>
         <name>Copenhagen</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -332,7 +332,7 @@
       </Placemark>
       <Placemark>
         <name>Prague</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -341,7 +341,7 @@
       </Placemark>
       <Placemark>
         <name>Vienna</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -350,7 +350,7 @@
       </Placemark>
       <Placemark>
         <name>Metropolitan City of Venice</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -359,7 +359,7 @@
       </Placemark>
       <Placemark>
         <name>Rome</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -368,7 +368,7 @@
       </Placemark>
       <Placemark>
         <name>Milan</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -377,7 +377,7 @@
       </Placemark>
       <Placemark>
         <name>Zurich</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -386,7 +386,7 @@
       </Placemark>
       <Placemark>
         <name>Munich</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -395,7 +395,7 @@
       </Placemark>
       <Placemark>
         <name>Frankfurt</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -404,7 +404,7 @@
       </Placemark>
       <Placemark>
         <name>Amsterdam</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -413,7 +413,7 @@
       </Placemark>
       <Placemark>
         <name>London</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -422,7 +422,7 @@
       </Placemark>
       <Placemark>
         <name>Isle of Man</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -431,7 +431,7 @@
       </Placemark>
       <Placemark>
         <name>Dublin</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -440,7 +440,7 @@
       </Placemark>
       <Placemark>
         <name>Paris</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -449,7 +449,7 @@
       </Placemark>
       <Placemark>
         <name>Lyon</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -458,7 +458,7 @@
       </Placemark>
       <Placemark>
         <name>Barcelona</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -467,7 +467,7 @@
       </Placemark>
       <Placemark>
         <name>Madrid</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -476,7 +476,7 @@
       </Placemark>
       <Placemark>
         <name>Casablanca</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -485,7 +485,7 @@
       </Placemark>
       <Placemark>
         <name>Warsaw</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -514,7 +514,7 @@
       </Placemark>
       <Placemark>
         <name>Multan</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -523,7 +523,7 @@
       </Placemark>
       <Placemark>
         <name>Baghdad</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -552,7 +552,7 @@
       </Placemark>
       <Placemark>
         <name>Point 81</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -591,7 +591,7 @@
       </Placemark>
       <Placemark>
         <name>Gorakhpur</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -600,7 +600,7 @@
       </Placemark>
       <Placemark>
         <name>Varanasi</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -609,7 +609,7 @@
       </Placemark>
       <Placemark>
         <name>Sunauli</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -678,7 +678,7 @@
       </Placemark>
       <Placemark>
         <name>Algeciras</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -687,7 +687,7 @@
       </Placemark>
       <Placemark>
         <name>Tangier</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
@@ -706,7 +706,7 @@
       </Placemark>
       <Placemark>
         <name>Busan</name>
-        <styleUrl>#icon-503-DB4436-nodesc</styleUrl>
+        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
         <ExtendedData>
         </ExtendedData>
         <Point>
