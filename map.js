@@ -18,10 +18,11 @@ initializeMap = function(){
       map: map,
       preserveViewport: true
     });
-    return ctaLayer = new google.maps.KmlLayer({
+    ctaLayer = new google.maps.KmlLayer({
       url: followMeeURL,
       map: map,
       preserveViewport: true
     });
+    google.maps.event.trigger(map, 'resize');
   });
 };
