@@ -14,14 +14,14 @@ initializeMap = function(){
     mapElement = document.getElementById('fullcirclemap');
     map = new google.maps.Map(mapElement, options);
     ctaLayer = new google.maps.KmlLayer({
-      url: gmapURL,
+      url: followMeeURL,
       map: map,
       preserveViewport: true
     });
     ctaLayer = new google.maps.KmlLayer({
-      url: followMeeURL,
+      url: gmapURL,
       map: map,
-      preserveViewport: true
+      // preserveViewport: true
     });
     google.maps.event.trigger(map, 'resize');
   });
