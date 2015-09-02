@@ -18,11 +18,13 @@ initializeMap = function(){
       map: map,
       preserveViewport: true
     });
-    ctaLayer = new google.maps.KmlLayer({
+    gmapLayer = new google.maps.KmlLayer({
       url: gmapURL,
       map: map,
       // preserveViewport: true
     });
-    google.maps.event.trigger(map, 'resize');
+    google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
+      google.maps.event.trigger(map, 'resize');
+    });
   });
 };
