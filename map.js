@@ -30,12 +30,13 @@ initializeMap = function(){
       map: map,
     });
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
-      setInterval(function(){
-        $("#fullcirclemap").css("height", window.innerHeight);
-        $("#charm").css("height", window.innerHeight);
-      }, 500)
       google.maps.event.trigger(map, 'resize');
     });
+    setInterval(function(){
+      $("#fullcirclemap").css("height", window.innerHeight);
+      $("#charm").css("height", window.innerHeight);
+      google.maps.event.trigger(map, 'resize');
+    }, 500)
     // google.maps.event.addListener(videoLayer, "click")
     videoLayer.addListener('click', function(kmlEvent){
       var text = kmlEvent.featureData.description
