@@ -33,8 +33,9 @@ initializeMap = function(){
       google.maps.event.trigger(map, 'resize');
     });
     setInterval(function(){
-      $("#fullcirclemap").css("height", window.innerHeight);
-      $("#charm").css("height", window.innerHeight);
+      var offset = $('header').innerHeight || 0;
+      $("#fullcirclemap").css("height", window.innerHeight - offset);
+      $("#charm").css("height", window.innerHeight - offset);
       google.maps.event.trigger(map, 'resize');
     }, 500)
     // google.maps.event.addListener(videoLayer, "click")
