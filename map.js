@@ -19,12 +19,13 @@ initializeMap = function(){
       map: map,
       preserveViewport: true
     });
-    gmapLayer = new google.maps.KmlLayer({
-      url: gmapURL,
-      map: map,
-    });
     videoLayer = new google.maps.KmlLayer({
       url: videoURL,
+      map: map,
+      preserveViewport: true
+    });
+    gmapLayer = new google.maps.KmlLayer({
+      url: gmapURL,
       map: map,
     });
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
