@@ -24,6 +24,10 @@ main {
   float: left;
 }
 
+#preFooter nav {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 769px) {
   #fullcirclemap{
     min-width: 60%;
