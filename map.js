@@ -37,6 +37,8 @@ initializeMap = function(){
       var text = kmlEvent.featureData.description
       $("#fullcirclemap").animate({width: "60%"}, function(){
         $("#charm").css("width", "40%");
+        var videoId = text.match(/\?v=(.*)"/);
+        var embed = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>'
         $("#charm").html(text);
       });
     });
