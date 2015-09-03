@@ -33,7 +33,7 @@ initializeMap = function(){
       google.maps.event.trigger(map, 'resize');
     });
     setInterval(function(){
-      var offset = $('header').innerHeight || 0;
+      var offset = $('header').height() || 0;
       $("#fullcirclemap").css("height", window.innerHeight - offset);
       $("#charm").css("height", window.innerHeight - offset);
       google.maps.event.trigger(map, 'resize');
