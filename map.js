@@ -39,7 +39,7 @@ initializeMap = function(){
         $("#charm").css("width", "40%");
         var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
         var videoId = matches[matches.length - 1]
-        var embed = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>'
+        var embed = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
         $("#charm").html(embed);
       });
     });
