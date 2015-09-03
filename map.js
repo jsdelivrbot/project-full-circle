@@ -22,7 +22,8 @@ initializeMap = function(){
     videoLayer = new google.maps.KmlLayer({
       url: videoURL,
       map: map,
-      preserveViewport: true
+      preserveViewport: true,
+      suppressInfoWindows: true
     });
     gmapLayer = new google.maps.KmlLayer({
       url: gmapURL,
