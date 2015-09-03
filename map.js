@@ -21,10 +21,21 @@ initializeMap = function(){
     gmapLayer = new google.maps.KmlLayer({
       url: gmapURL,
       map: map,
-      // preserveViewport: true
+    });
+    videoLayer = new google.maps.KmlLayer({
+      url: videoURL,
+      map: map,
     });
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
+    });
+    // google.maps.event.addListener(videoLayer, "click")
+    videoLayer.addListener('click', function(kmlEvent){
+      var text = kmlEvent.featureData.description
+      $("#fullcirclemap").animate({width: "60%"}, function(){
+        $("#charm").css("width", "40%");
+        $("#charm").html(text);
+      });
     });
   });
 };
