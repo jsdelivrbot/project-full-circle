@@ -57,3 +57,11 @@ main {
 .row .col .sqs-block.code-block sqs-block-code {
   padding: 0 !important;
 }
+
+#video {
+  height: 100%;
+}
+
+#close-video-button:hover{
+  cursor: pointer;
+}
