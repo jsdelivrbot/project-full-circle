@@ -41,13 +41,23 @@ initializeMap = function(){
     // google.maps.event.addListener(videoLayer, "click")
     videoLayer.addListener('click', function(kmlEvent){
       var text = kmlEvent.featureData.description
-      $("#fullcirclemap").animate({width: "60%"}, 1000, function(){
-        $("#charm").css("width", "40%");
-        var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
-        var videoId = matches[matches.length - 1]
-        var embed = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>'
-        $("#charm").html(embed);
-      });
+      var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
+      var videoId = matches[matches.length - 1]
+      if (window.innerWidth > 640){
+        $("#fullcirclemap").animate({width: "60%"}, 1000, function(){
+          $("#charm").css("width", "40%");
+          var embed = '<div id="video"><div id="close-video-button">X</div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe></div>'
+          $("#charm").html(embed);
+          $("#close-video-button").on("click", function(){
+            $("#fullcirclemap").animate({width: "100%"}, 1000, function(){
+              $("#charm").html("")
+              $("#charm").css("width", "0%");
+            })
+          })
+        });
+      } else {
+        window.open("http://youtube.com/watch?v=" + videoId, "_blank")
+      }
     });
   });
 };

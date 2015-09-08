@@ -52,3 +52,8 @@ main {
     /*height: 400px;*/
   }
 }
+
+/* prevent 640px padding addition */
+.row .col .sqs-block.code-block sqs-block-code {
+  padding: 0 !important;
+}
