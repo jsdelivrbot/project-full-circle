@@ -40,7 +40,6 @@ initializeMap = function(){
     }, 500)
     // google.maps.event.addListener(videoLayer, "click")
     var interactable = function(kmlEvent){
-      map.setCenter(new google.maps.LatLng(kmlEvent.latLng.G, kmlEvent.latLng.K));
       var text = kmlEvent.featureData.description;
       if(text){
         var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
@@ -52,6 +51,7 @@ initializeMap = function(){
         $("#fullcirclemap").animate({width: "60%"}, 500, function(){
           $("#charm").css("width", "40%");
           $("#charm").css("z-index", "500");
+          map.setCenter(new google.maps.LatLng(kmlEvent.latLng.G, kmlEvent.latLng.K));
           var embed = '<div id="video"><div id="close-video-button"><img src="https://rawgit.com/Ravenstine/project-full-circle/master/close-icon.png" /></div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe></div>'
           $("#charm").html(embed);
           $("#close-video-button").on("click", function(){
