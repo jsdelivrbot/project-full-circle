@@ -49,6 +49,7 @@ main {
 
   #charm {
     min-width: 100%;
+    position: absolute;
     /*height: 400px;*/
   }
 }
@@ -62,6 +63,8 @@ main {
   height: 100%;
 }
 
-#close-video-button:hover{
+#close-video-button{
+  color: white;
+  position: absolute;
   cursor: pointer;
 }

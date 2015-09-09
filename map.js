@@ -39,11 +39,12 @@ initializeMap = function(){
       google.maps.event.trigger(map, 'resize');
     }, 500)
     // google.maps.event.addListener(videoLayer, "click")
-    videoLayer.addListener('click', function(kmlEvent){
+    var interactable = function(kmlEvent){
       var text = kmlEvent.featureData.description
       var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
+      if (matches){
       var videoId = matches[matches.length - 1]
-      if (window.innerWidth > 640){
+      // if (window.innerWidth > 640){
         $("#fullcirclemap").animate({width: "60%"}, 1000, function(){
           $("#charm").css("width", "40%");
           var embed = '<div id="video"><div id="close-video-button"><img src="https://rawgit.com/Ravenstine/project-full-circle/master/close-icon.png" /></div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe></div>'
@@ -55,9 +56,13 @@ initializeMap = function(){
             })
           })
         });
-      } else {
-        window.open("http://youtube.com/watch?v=" + videoId, "_blank")
       }
-    });
+      // } else {
+      //   window.open("http://youtube.com/watch?v=" + videoId, "_blank")
+      // }
+    };
+
+    videoLayer.addListener('click', interactable);
+    gmapLayer.addListener("click", interactable);
   });
 };
