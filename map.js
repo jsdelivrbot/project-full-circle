@@ -41,7 +41,11 @@ initializeMap = function(){
     // google.maps.event.addListener(videoLayer, "click")
     var interactable = function(kmlEvent){
       var text = kmlEvent.featureData.description
-      var matches = try{text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/)}catch(err){undefined};
+      if(text){
+        var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
+      } else {
+        var matches = undefined;
+      }
       if (matches){
         var videoId = matches[matches.length - 1]
         // if (window.innerWidth > 640){
