@@ -40,7 +40,8 @@ initializeMap = function(){
     }, 500)
     // google.maps.event.addListener(videoLayer, "click")
     var interactable = function(kmlEvent){
-      var text = kmlEvent.featureData.description
+      map.setCenter(new google.maps.LatLng(kmlEvent.latLng.G, kmlEvent.latLng.K));
+      var text = kmlEvent.featureData.description;
       if(text){
         var matches = text.match(/(youtu.be\/|youtube.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&\"\'>]+)/);
       } else {
@@ -48,13 +49,13 @@ initializeMap = function(){
       }
       if (matches){
         var videoId = matches[matches.length - 1]
-        $("#fullcirclemap").animate({width: "60%"}, 1000, function(){
+        $("#fullcirclemap").animate({width: "60%"}, 500, function(){
           $("#charm").css("width", "40%");
           $("#charm").css("z-index", "500");
           var embed = '<div id="video"><div id="close-video-button"><img src="https://rawgit.com/Ravenstine/project-full-circle/master/close-icon.png" /></div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe></div>'
           $("#charm").html(embed);
           $("#close-video-button").on("click", function(){
-            $("#fullcirclemap").animate({width: "100%"}, 1000, function(){
+            $("#fullcirclemap").animate({width: "100%"}, 500, function(){
               $("#charm").html("")
               $("#charm").css("width", "0%");
               $("#charm").css("z-index", "-1");
