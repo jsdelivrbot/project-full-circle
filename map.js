@@ -61,11 +61,11 @@ initializeMap = function(){
           })
         });
       } else {
-        var infowindow = new google.maps.InfoWindow({
-          content: kmlEvent.featureData.infoWindowHtml,
-          position: new google.maps.LatLng(kmlEvent.latLng.G, kmlEvent.latLng.K)
-        });
-        infowindow.open(map);
+        // var infowindow = new google.maps.InfoWindow({
+        //   content: kmlEvent.featureData.infoWindowHtml,
+        //   position: new google.maps.LatLng(kmlEvent.latLng.G, kmlEvent.latLng.K)
+        // });
+        // infowindow.open(map);
       }
       // } else {
       //   window.open("http://youtube.com/watch?v=" + videoId, "_blank")
