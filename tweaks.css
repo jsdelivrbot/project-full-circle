@@ -28,7 +28,7 @@ main {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 852px) {
   #fullcirclemap{
     min-width: 60%;
     max-width: 100%;
@@ -37,6 +37,19 @@ main {
 
   #charm {
     max-width: 40%;
+    /*height: 800px;*/
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #fullcirclemap{
+    min-width: 50%;
+    max-width: 100%;
+    /*height: 700px;*/
+  }
+
+  #charm {
+    max-width: 50%;
     /*height: 800px;*/
   }
 }
@@ -55,7 +68,7 @@ main {
 }
 
 /* prevent 640px padding addition */
-.row .col .sqs-block.code-block sqs-block-code {
+.row .col .sqs-block.code-block .sqs-block-code {
   padding: 0 !important;
 }
 
