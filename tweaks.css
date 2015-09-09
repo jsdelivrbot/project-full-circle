@@ -68,7 +68,7 @@ main {
 }
 
 /* prevent 640px padding addition */
-.row .col .sqs-block.code-block .sqs-block-code {
+.row .col .sqs-block.code-block.sqs-block-code {
   padding: 0 !important;
 }
 
