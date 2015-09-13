@@ -1,17 +1,17 @@
-#siteWrapper #page{
+/*#siteWrapper #page{
   margin: none;
   padding: none;
   max-width: none;
-}
+}*/
 
-#content{
+/*#content{
   max-width: 1020px;
-}
+}*/
 
-main {
+/*main {
   padding: 0 !important;
 }
-
+*/
 #fullcirclemap img{
   max-width: none !important;
 }
@@ -72,9 +72,9 @@ main {
 }
 
 /* prevent 640px padding addition */
-.row .col .sqs-block.code-block.sqs-block-code {
+/*.row .col .sqs-block.code-block.sqs-block-code {
   padding: 0 !important;
-}
+}*/
 
 #video {
   height: 100%;
