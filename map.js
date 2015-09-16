@@ -18,8 +18,20 @@ initializeMap = function(){
     gmapLayer = new google.maps.KmlLayer({
       url: gmapURL,
       map: map,
+      zIndex: 1
     });
-
+    locationHistoryLayer = new google.maps.KmlLayer({
+      url: locationHistory,
+      map: map,
+      preserveViewport: true,
+      zIndex: 2
+    });
+    lastKnownPositionLayer = new google.maps.KmlLayer({
+      url: lastKnownPosition,
+      map: map,
+      preserveViewport: true,
+      zIndex: 3
+    });
     // videoLayer = new google.maps.KmlLayer({
     //   url: videoURL,
     //   map: map,
@@ -28,17 +40,6 @@ initializeMap = function(){
     // });
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
-      lastKnownPositionLayer = new google.maps.KmlLayer({
-        url: lastKnownPosition,
-        map: map,
-        preserveViewport: true
-      });
-      lastKnownPositionLayer.setZIndex(9999);
-      locationHistoryLayer = new google.maps.KmlLayer({
-        url: locationHistory,
-        map: map,
-        preserveViewport: true
-      });
     });
     setInterval(function(){
       var offset = $('header').height() || 0;
