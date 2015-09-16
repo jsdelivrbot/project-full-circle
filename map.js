@@ -15,14 +15,14 @@ initializeMap = function(){
     };
     mapElement = document.getElementById('fullcirclemap');
     map = new google.maps.Map(mapElement, options);
-    gmapLayer = new google.maps.KmlLayer({
-      url: gmapURL,
-      map: map,
-    });
     lastKnownPositionLayer = new google.maps.KmlLayer({
       url: lastKnownPosition,
       map: map,
       preserveViewport: true
+    });
+    gmapLayer = new google.maps.KmlLayer({
+      url: gmapURL,
+      map: map,
     });
     locationHistoryLayer = new google.maps.KmlLayer({
       url: locationHistory,
