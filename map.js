@@ -33,6 +33,7 @@ initializeMap = function(){
         map: map,
         preserveViewport: true
       });
+      lastKnownPositionLayer.setZIndex(9999);
       locationHistoryLayer = new google.maps.KmlLayer({
         url: locationHistory,
         map: map,
