@@ -19,17 +19,7 @@ initializeMap = function(){
       url: gmapURL,
       map: map,
     });
-    lastKnownPositionLayer = new google.maps.KmlLayer({
-      url: lastKnownPosition,
-      map: map,
-      preserveViewport: true,
-      zIndex: 99999
-    });
-    locationHistoryLayer = new google.maps.KmlLayer({
-      url: locationHistory,
-      map: map,
-      preserveViewport: true
-    });
+
     // videoLayer = new google.maps.KmlLayer({
     //   url: videoURL,
     //   map: map,
@@ -38,6 +28,16 @@ initializeMap = function(){
     // });
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
+      lastKnownPositionLayer = new google.maps.KmlLayer({
+        url: lastKnownPosition,
+        map: map,
+        preserveViewport: true
+      });
+      locationHistoryLayer = new google.maps.KmlLayer({
+        url: locationHistory,
+        map: map,
+        preserveViewport: true
+      });
     });
     setInterval(function(){
       var offset = $('header').height() || 0;
