@@ -15,18 +15,18 @@ initializeMap = function(){
     };
     mapElement = document.getElementById('fullcirclemap');
     map = new google.maps.Map(mapElement, options);
-    gmapLayer = new google.maps.KmlLayer({
+    window.gmapLayer = new google.maps.KmlLayer({
       url: gmapURL,
       map: map,
       zIndex: 1
     });
-    locationHistoryLayer = new google.maps.KmlLayer({
+    window.locationHistoryLayer = new google.maps.KmlLayer({
       url: locationHistory,
       map: map,
       preserveViewport: true,
       zIndex: 2
     });
-    lastKnownPositionLayer = new google.maps.KmlLayer({
+    window.lastKnownPositionLayer = new google.maps.KmlLayer({
       url: lastKnownPosition,
       map: map,
       preserveViewport: true,
