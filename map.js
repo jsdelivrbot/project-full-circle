@@ -29,12 +29,12 @@ initializeMap = function(){
     // });
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
-      // window.locationHistoryLayer = new google.maps.KmlLayer({
-      //   url: locationHistory,
-      //   map: map,
-      //   preserveViewport: true,
-      //   zIndex: 2
-      // });
+      window.locationHistoryLayer = new google.maps.KmlLayer({
+        url: locationHistory,
+        map: map,
+        preserveViewport: true,
+        zIndex: 2
+      });
       window.lastKnownPositionLayer = new google.maps.KmlLayer({
         url: lastKnownPosition,
         map: map,
