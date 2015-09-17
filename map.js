@@ -40,7 +40,7 @@ initializeMap = function(){
       preserveViewport: true,
       zIndex: 3
     });
-    google.maps.event.addListener(lastKnownPositionLayer, 'defaultviewport_changed', function () {
+    google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
       // console.log('kml loaded:');
       // google.maps.event.trigger(map, 'resize');
       var bounds = lastKnownPositionLayer.getDefaultViewport();
