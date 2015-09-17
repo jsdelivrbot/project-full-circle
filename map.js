@@ -42,9 +42,9 @@ initializeMap = function(){
         // preserveViewport: true,
         zIndex: 3
       });
-      google.maps.event.addListener(lastKnownPositionLayer, 'status_changed', function () {
+      google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
         // console.log('kml loaded:');
-        // lastKnownPositionLayer.map.setZoom(2);
+        lastKnownPositionLayer.map.setZoom(5);
       })
     });
     setInterval(function(){
