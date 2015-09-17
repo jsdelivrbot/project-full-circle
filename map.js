@@ -28,24 +28,27 @@ initializeMap = function(){
     //   preserveViewport: true,
     //   suppressInfoWindows: true
     // });
+    window.locationHistoryLayer = new google.maps.KmlLayer({
+      url: locationHistory,
+      map: map,
+      preserveViewport: true,
+      zIndex: 2
+    });
+    window.lastKnownPositionLayer = new google.maps.KmlLayer({
+      url: lastKnownPosition,
+      map: map,
+      // preserveViewport: true,
+      zIndex: 3
+    });
+    google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
+      // console.log('kml loaded:');
+      google.maps.event.trigger(map, 'resize');
+      lastKnownPositionLayer.map.setZoom(5);
+    })
+
+
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
-      window.locationHistoryLayer = new google.maps.KmlLayer({
-        url: locationHistory,
-        map: map,
-        preserveViewport: true,
-        zIndex: 2
-      });
-      window.lastKnownPositionLayer = new google.maps.KmlLayer({
-        url: lastKnownPosition,
-        map: map,
-        // preserveViewport: true,
-        zIndex: 3
-      });
-      google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
-        // console.log('kml loaded:');
-        lastKnownPositionLayer.map.setZoom(5);
-      })
     });
     setInterval(function(){
       var offset = $('header').height() || 0;
