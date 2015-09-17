@@ -40,6 +40,11 @@ initializeMap = function(){
       preserveViewport: true,
       zIndex: 3
     });
+
+    var bounds = lastKnownPositionLayer.getDefaultViewport();
+    map.setCenter(bounds.getCenter());
+
+
     // google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
     //   // console.log('kml loaded:');
     //   // google.maps.event.trigger(map, 'resize');
