@@ -44,7 +44,7 @@ initializeMap = function(){
       });
       google.maps.event.addListener(lastKnownPositionLayer, 'status_changed', function () {
         // console.log('kml loaded:');
-        lastKnownPositionLayer.map.setZoom(6);
+        lastKnownPositionLayer.map.setZoom(4);
       })
     });
     setInterval(function(){
