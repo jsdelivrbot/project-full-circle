@@ -6,7 +6,7 @@ initializeMap = function(){
     gmapURL = 'http://52.11.26.58:4567/gmap?time=' + new Date().getTime();
     // videoURL = 'http://52.11.26.58:4567/mapfilter/z_Tk3EyXNpN8.kjg5KrIAJ1V0?time=' + new Date().getTime();
     options = {
-      zoom: 6,
+      zoom: 3,
       center: {
         lat: 36.574595,
         lng: -14.487714
@@ -42,6 +42,10 @@ initializeMap = function(){
         // preserveViewport: true,
         zIndex: 3
       });
+      google.maps.event.addListener(lastKnownPositionLayer, 'status_changed', function () {
+        // console.log('kml loaded:');
+        lastKnownPositionLayer.map.setZoom(6);
+      })
     });
     setInterval(function(){
       var offset = $('header').height() || 0;
