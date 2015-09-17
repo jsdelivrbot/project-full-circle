@@ -15,6 +15,12 @@ initializeMap = function(){
     };
     mapElement = document.getElementById('fullcirclemap');
     map = new google.maps.Map(mapElement, options);
+    setInterval(function(){
+      var offset = $('header').height() || 0;
+      $("#fullcirclemap").css("height", window.innerHeight - offset);
+      $("#charm").css("height", window.innerHeight - offset);
+      google.maps.event.trigger(map, 'resize');
+    }, 500)
     window.gmapLayer = new google.maps.KmlLayer({
       url: gmapURL,
       map: map,
@@ -57,12 +63,7 @@ initializeMap = function(){
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
     });
-    setInterval(function(){
-      var offset = $('header').height() || 0;
-      $("#fullcirclemap").css("height", window.innerHeight - offset);
-      $("#charm").css("height", window.innerHeight - offset);
-      google.maps.event.trigger(map, 'resize');
-    }, 500)
+
     // google.maps.event.addListener(videoLayer, "click")
     var interactable = function(kmlEvent){
       var text = kmlEvent.featureData.description;
