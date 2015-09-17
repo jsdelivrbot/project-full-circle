@@ -47,8 +47,8 @@ initializeMap = function(){
       zIndex: 3
     });
 
-    var bounds = lastKnownPositionLayer.getDefaultViewport();
-    map.setCenter(bounds.getCenter());
+    // var bounds = lastKnownPositionLayer.getDefaultViewport();
+    // map.setCenter(bounds.getCenter());
 
 
     // google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
