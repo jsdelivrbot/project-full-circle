@@ -2,6 +2,7 @@ initializeMap = function(){
   $(document).ready(function() {
     var locationHistoryLayer, lastKnownPositionLayer, lastKnownPosition, locaitonHistory, gmapURL, map, mapElement, options, videoURL, videoLayer;
     lastKnownPosition = "https://www.followmee.com/api/tracks.aspx?key=4915631036dcae1188bad47ababc6353&username=fullcircle&output=kml&function=currentfordevice&deviceid=10993763&dontcacheme=" + new Date().getTime();
+    lastKnownPositionJSON = "https://www.followmee.com/api/tracks.aspx?key=4915631036dcae1188bad47ababc6353&username=fullcircle&output=json&function=currentfordevice&deviceid=10993763"
     locationHistory = 'http://52.11.26.58:4567/location-history?time=' + new Date().getTime();
     gmapURL = 'http://52.11.26.58:4567/gmap?time=' + new Date().getTime();
     // videoURL = 'http://52.11.26.58:4567/mapfilter/z_Tk3EyXNpN8.kjg5KrIAJ1V0?time=' + new Date().getTime();
@@ -46,6 +47,13 @@ initializeMap = function(){
       preserveViewport: true,
       zIndex: 3
     });
+
+    
+    $.get("https://www.followmee.com/api/tracks.aspx?key=4915631036dcae1188bad47ababc6353&username=fullcircle&output=json&function=currentfordevice&deviceid=10993763", function(response){
+      lastKnownCoordinates = JSON.parse(response)['Data'][0]
+      map.setCenter(new google.maps.LatLng(lastKnownCoordinates['Latitude'], lastKnownCoordinates['Longitude']))
+    })
+
 
     // var bounds = lastKnownPositionLayer.getDefaultViewport();
     // map.setCenter(bounds.getCenter());
