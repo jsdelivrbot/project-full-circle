@@ -50,8 +50,8 @@ initializeMap = function(){
 
     
     $.get(lastKnownPositionJSON, function(response){
-      lastKnownCoordinates = JSON.parse(response)['Data'][0]
-      map.setCenter(new google.maps.LatLng(lastKnownCoordinates['Latitude'], lastKnownCoordinates['Longitude']))
+      lastKnownCoordinates = response.Data[0]
+      map.setCenter(new google.maps.LatLng(lastKnownCoordinates.Latitude, lastKnownCoordinates.Longitude))
     })
 
 
