@@ -84,7 +84,10 @@ initializeMap = function(){
     // videoLayer.addListener('click', interactable);
     gmapLayer.addListener("click", interactable);
     var legendDiv = document.createElement('div');
-    legendDiv.innerHTML = "<label>Legend</label><div><img src='http://www.followmee.com/images/map_icon/marker_green.png' />Current Position</div><div><img src='https://rawgit.com/Ravenstine/project-full-circle/master/video.png' />Video</div>";
+    $(legendDiv).css("background-color", "white");
+    $(legendDiv).css("margin-right", "1em");
+    $(legendDiv).css("padding", "5px");
+    legendDiv.innerHTML = "<strong>Legend</strong><div><img src='http://www.followmee.com/images/map_icon/marker_green.png' />Current Position</div><div><img src='https://rawgit.com/Ravenstine/project-full-circle/master/video.png' />Video</div>";
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendDiv);
 
 
