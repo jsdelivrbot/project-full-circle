@@ -29,12 +29,6 @@ initializeMap = function(){
       zIndex: 1
     });
 
-    // videoLayer = new google.maps.KmlLayer({
-    //   url: videoURL,
-    //   map: map,
-    //   preserveViewport: true,
-    //   suppressInfoWindows: true
-    // });
     window.locationHistoryLayer = new google.maps.KmlLayer({
       url: locationHistory,
       map: map,
@@ -55,24 +49,10 @@ initializeMap = function(){
     })
 
 
-    // var bounds = lastKnownPositionLayer.getDefaultViewport();
-    // map.setCenter(bounds.getCenter());
-
-
-    // google.maps.event.addListener(lastKnownPositionLayer, 'metadata_changed', function () {
-    //   // console.log('kml loaded:');
-    //   // google.maps.event.trigger(map, 'resize');
-    //   var bounds = lastKnownPositionLayer.getDefaultViewport();
-    //   // lastKnownPositionLayer.map.setZoom(5);
-    //   map.setCenter(bounds.getCenter());
-    // })
-
-
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
     });
 
-    // google.maps.event.addListener(videoLayer, "click")
     var interactable = function(kmlEvent){
       var text = kmlEvent.featureData.description;
       if(text){
@@ -101,8 +81,18 @@ initializeMap = function(){
       } 
 
     };
-
     // videoLayer.addListener('click', interactable);
     gmapLayer.addListener("click", interactable);
+
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
+      "<div id='legend'>
+        <label>Legend</label>
+        <div><img src='http://www.followmee.com/images/map_icon/marker_green.png' />Current Position</div>
+        <div><img src='https://rawgit.com/Ravenstine/project-full-circle/master/video.png' />Video</div>
+      </div>
+      "
+    )
+
+
   });
 };
