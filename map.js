@@ -83,8 +83,9 @@ initializeMap = function(){
     };
     // videoLayer.addListener('click', interactable);
     gmapLayer.addListener("click", interactable);
-
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push("<div id='legend'><label>Legend</label><div><img src='http://www.followmee.com/images/map_icon/marker_green.png' />Current Position</div><div><img src='https://rawgit.com/Ravenstine/project-full-circle/master/video.png' />Video</div></div>")
+    var legendDiv = document.createElement('div');
+    legendDiv.innerHTML = "<label>Legend</label><div><img src='http://www.followmee.com/images/map_icon/marker_green.png' />Current Position</div><div><img src='https://rawgit.com/Ravenstine/project-full-circle/master/video.png' />Video</div>";
+    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendDiv);
 
 
   });
