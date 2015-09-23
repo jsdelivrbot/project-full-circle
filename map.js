@@ -43,14 +43,12 @@ initializeMap = function(){
     });
 
     
-    $.get(lastKnownPositionJSON, function(response){
-      lastKnownCoordinates = response.Data[0]
-      map.setCenter(new google.maps.LatLng(lastKnownCoordinates.Latitude, lastKnownCoordinates.Longitude))
-    })
-
-
     google.maps.event.addListener(gmapLayer, "metadata_changed", function() {
       google.maps.event.trigger(map, 'resize');
+      $.get(lastKnownPositionJSON, function(response){
+        lastKnownCoordinates = response.Data[0]
+        map.setCenter(new google.maps.LatLng(lastKnownCoordinates.Latitude, lastKnownCoordinates.Longitude))
+      })
     });
 
     var interactable = function(kmlEvent){
