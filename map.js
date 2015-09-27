@@ -92,7 +92,7 @@ initializeMap = function(){
     // $(legendDiv).css("background-color", "green");
     // $(legendDiv).css("margin-right", "1em");
     // $(legendDiv).css("padding", "5px");
-    scrollButtonDiv.innerHTML = "<button id='scrollButton' style='background-color: lightgreen !important;' class='newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape'><strong>More good stuff&nbsp;</strong><img src='https://rawgit.com/Ravenstine/project-full-circle/staging/glyphicons-213-down-arrow.png' style='width: 10px;' draggable='false'/></button>";
+    scrollButtonDiv.innerHTML = "<button id='scrollButton' style='background-color: lightgreen !important; margin-bottom: 15px;' class='newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape'><strong>More good stuff&nbsp;</strong><img src='https://rawgit.com/Ravenstine/project-full-circle/staging/glyphicons-213-down-arrow.png' style='width: 10px;' draggable='false'/></button>";
     $(scrollButtonDiv).on("click", function(e){
       $("html, body").animate({ scrollTop: $('#content-start').offset().top }, 1000);
     })
