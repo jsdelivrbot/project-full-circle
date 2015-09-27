@@ -100,7 +100,7 @@ initializeMap = function(){
 
 
     $(document).on("scroll", function(){
-      if ($document.scrollTop() >= 50) {
+      if ($(document).scrollTop() >= 50) {
         $(scrollButtonDiv).hide();
       } else {
         $(scrollButtonDiv).show();
