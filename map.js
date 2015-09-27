@@ -88,6 +88,24 @@ initializeMap = function(){
     legendDiv.innerHTML = "<strong>Legend</strong><div><img src='http://www.followmee.com/images/map_icon/marker_green.png' />Current Position</div><div><img src='https://rawgit.com/Ravenstine/project-full-circle/master/video.png' />Video</div>";
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legendDiv);
 
+    var scrollButtonDiv = document.createElement('div');
+    // $(legendDiv).css("background-color", "green");
+    // $(legendDiv).css("margin-right", "1em");
+    // $(legendDiv).css("padding", "5px");
+    scrollButtonDiv.innerHTML = "<button id='scrollButton' class='newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape'>View More</button>";
+    $(scrollButtonDiv).on("click", function(e){
+      $("html, body").animate({ scrollTop: $('#content-start').offset().top }, 1000);
+    })
+    map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(scrollButtonDiv);
+
+
+    $(document).on("scroll", function(){
+      if ($document.scrollTop() >= 50) {
+        $(scrollButtonDiv).hide();
+      } else {
+        $(scrollButtonDiv).show();
+      }
+    })
 
   });
 };
