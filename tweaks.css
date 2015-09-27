@@ -86,6 +86,6 @@
   cursor: pointer;
 }
 
-#scrollButton {
+button#scrollButton {
   background-color: white !important;
 }

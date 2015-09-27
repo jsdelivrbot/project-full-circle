@@ -92,7 +92,7 @@ initializeMap = function(){
     // $(legendDiv).css("background-color", "green");
     // $(legendDiv).css("margin-right", "1em");
     // $(legendDiv).css("padding", "5px");
-    scrollButtonDiv.innerHTML = "<button id='scrollButton' class='newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape'>View More</button>";
+    scrollButtonDiv.innerHTML = "<button id='scrollButton' style='background-color: white !important;' class='newsletter-form-button sqs-system-button sqs-editable-button-layout sqs-editable-button-style sqs-editable-button-shape'>View More</button>";
     $(scrollButtonDiv).on("click", function(e){
       $("html, body").animate({ scrollTop: $('#content-start').offset().top }, 1000);
     })
@@ -101,9 +101,9 @@ initializeMap = function(){
 
     $(document).on("scroll", function(){
       if ($(document).scrollTop() >= 50) {
-        $(scrollButtonDiv).hide();
+        $(scrollButtonDiv).fadeOut();
       } else {
-        $(scrollButtonDiv).show();
+        $(scrollButtonDiv).fadeIn();
       }
     })
 
