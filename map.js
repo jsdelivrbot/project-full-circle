@@ -39,7 +39,8 @@ initializeMap = function(){
       url: lastKnownPosition,
       map: map,
       preserveViewport: true,
-      zIndex: 3
+      zIndex: 3,
+      suppressInfoWindows: true
     });
 
     
