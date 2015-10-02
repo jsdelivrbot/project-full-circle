@@ -33,13 +33,13 @@ initializeMap = function(){
       url: locationHistory,
       map: map,
       preserveViewport: true,
-      zIndex: 2
+      zIndex: 3
     });
     window.lastKnownPositionLayer = new google.maps.KmlLayer({
       url: lastKnownPosition,
       map: map,
       preserveViewport: true,
-      zIndex: 3,
+      zIndex: 2,
       suppressInfoWindows: true
     });
 
