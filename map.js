@@ -1,7 +1,7 @@
 initializeMap = function(){
   $(document).ready(function() {
     var locationHistoryLayer, lastKnownPositionLayer, lastKnownPosition, locaitonHistory, gmapURL, map, mapElement, options, videoURL, videoLayer;
-    lastKnownPosition = "http://52.11.26.58:1337/location-history?time=" + new Date().getTime();
+    lastKnownPosition = "http://52.11.26.58:1337/current-position?time=" + new Date().getTime();
     lastKnownPositionJSON = "http://52.11.26.58:4567/current-position?time=" + new Date().getTime();
     locationHistory = 'http://52.11.26.58:1337/location-history?time=' + new Date().getTime();
     gmapURL = 'http://52.11.26.58:4567/gmap?time=' + new Date().getTime();
@@ -33,14 +33,15 @@ initializeMap = function(){
       url: locationHistory,
       map: map,
       preserveViewport: true,
-      zIndex: 3
+      zIndex: 2,
+      suppressInfoWindows: true
     });
 
     window.lastKnownPositionLayer = new google.maps.KmlLayer({
       url: lastKnownPosition,
       map: map,
       preserveViewport: true,
-      zIndex: 2,
+      zIndex: 3,
       suppressInfoWindows: true
     });
 
