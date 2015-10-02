@@ -35,6 +35,7 @@ initializeMap = function(){
       preserveViewport: true,
       zIndex: 3
     });
+
     window.lastKnownPositionLayer = new google.maps.KmlLayer({
       url: lastKnownPosition,
       map: map,
@@ -51,6 +52,10 @@ initializeMap = function(){
         map.setCenter(new google.maps.LatLng(lastKnownCoordinates.Latitude, lastKnownCoordinates.Longitude))
       })
     });
+
+    google.maps.event.addListener(lastKnownPositionLayer, "click", function(e){
+      e.preventDefault()
+    })
 
     var interactable = function(kmlEvent){
       var text = kmlEvent.featureData.description;
