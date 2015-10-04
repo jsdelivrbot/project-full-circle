@@ -7,7 +7,7 @@ initializeMap = function(){
     gmapURL = 'http://52.11.26.58:4567/gmap?time=' + new Date().getTime();
     // videoURL = 'http://52.11.26.58:4567/mapfilter/z_Tk3EyXNpN8.kjg5KrIAJ1V0?time=' + new Date().getTime();
     options = {
-      zoom: 7,
+      zoom: 10,
       center: {
         lat: 36.110262,
         lng: 138.275837
