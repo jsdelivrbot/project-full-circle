@@ -9,8 +9,8 @@ initializeMap = function(){
     options = {
       zoom: 6,
       center: {
-        lat: 36.110262,
-        lng: 138.275837
+        lat: 36.065473,
+        lng: 120.389557
       },
       scrollwheel: false
     };
