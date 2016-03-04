@@ -1,10 +1,10 @@
 initializeMap = function(){
   $(document).ready(function() {
     var locationHistoryLayer, lastKnownPositionLayer, lastKnownPosition, locaitonHistory, gmapURL, map, mapElement, options, videoURL, videoLayer;
-    lastKnownPosition = "http://52.11.26.58:1337/current-position?time=" + new Date().getTime();
-    lastKnownPositionJSON = "http://52.11.26.58:4567/current-position?time=" + new Date().getTime();
-    locationHistory = 'http://52.11.26.58:1337/location-history?time=' + new Date().getTime();
-    gmapURL = 'http://52.11.26.58:4567/gmap?time=' + new Date().getTime();
+    lastKnownPosition = "https://rawgit.com/Ravenstine/project-full-circle/master/last_position.kml?time=" + new Date().getTime();
+    lastKnownPositionJSON = "https://rawgit.com/Ravenstine/project-full-circle/master/last_position.json?time=" + new Date().getTime();
+    locationHistory = 'https://rawgit.com/Ravenstine/project-full-circle/master/location_history.kml?time=' + new Date().getTime();
+    gmapURL = 'http://https://rawgit.com/Ravenstine/project-full-circle/master/gmap.kml?time=' + new Date().getTime();
     // videoURL = 'http://52.11.26.58:4567/mapfilter/z_Tk3EyXNpN8.kjg5KrIAJ1V0?time=' + new Date().getTime();
     options = {
       zoom: 6,
