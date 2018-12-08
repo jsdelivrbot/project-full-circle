@@ -351,7 +351,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>https://rawgit.com/Ravenstine/project-full-circle/master/red-balloon.png</href>
+          <href>https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/red-balloon.png</href>
         </Icon>
         <hotSpot x='16' xunits='pixels' y='31' yunits='insetPixels'>
         </hotSpot>
@@ -368,7 +368,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>https://rawgit.com/Ravenstine/project-full-circle/master/video.png</href>
+          <href>https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/video.png</href>
         </Icon>
         <hotSpot x='16' xunits='pixels' y='31' yunits='insetPixels'>
         </hotSpot>
@@ -388,7 +388,7 @@
 <IconStyle>
 <scale>1.1</scale>
 <Icon>
-<href>https://rawgit.com/Ravenstine/project-full-circle/master/greydot.png</href>
+<href>https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/greydot.png</href>
 </Icon>
 </IconStyle>
 </Style>

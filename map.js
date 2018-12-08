@@ -1,10 +1,10 @@
 initializeMap = function(){
   $(document).ready(function() {
     var locationHistoryLayer, lastKnownPositionLayer, lastKnownPosition, locaitonHistory, gmapURL, map, mapElement, options, videoURL, videoLayer;
-    lastKnownPosition = "https://rawgit.com/Ravenstine/project-full-circle/master/last_position.kml?time=" + new Date().getTime();
-    lastKnownPositionJSON = "https://rawgit.com/Ravenstine/project-full-circle/master/last_position.json?time=" + new Date().getTime();
-    locationHistory = 'https://rawgit.com/Ravenstine/project-full-circle/master/location_history.kml?time=' + new Date().getTime();
-    gmapURL = 'http://https://rawgit.com/Ravenstine/project-full-circle/master/gmap.kml?time=' + new Date().getTime();
+    lastKnownPosition = "https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/last_position.kml?time=" + new Date().getTime();
+    lastKnownPositionJSON = "https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/last_position.json?time=" + new Date().getTime();
+    locationHistory = 'https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/location_history.kml?time=' + new Date().getTime();
+    gmapURL = 'http://https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/gmap.kml?time=' + new Date().getTime();
     // videoURL = 'http://52.11.26.58:4567/mapfilter/z_Tk3EyXNpN8.kjg5KrIAJ1V0?time=' + new Date().getTime();
     options = {
       zoom: 6,
@@ -66,7 +66,7 @@ initializeMap = function(){
         $("#fullcirclemap").animate({width: "60%"}, 500, function(){
           $("#charm").css("width", "40%");
           $("#charm").css("z-index", "500");
-          var embed = '<div id="video"><div id="close-video-button"><img src="https://rawgit.com/Ravenstine/project-full-circle/master/close-icon.png" /></div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe></div>'
+          var embed = '<div id="video"><div id="close-video-button"><img src="https://cdn.jsdelivr.net/gh/Ravenstine/project-full-circle/close-icon.png" /></div><iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe></div>'
           $("#charm").html(embed);
           $("#close-video-button").on("click", function(){
             $("#fullcirclemap").animate({width: "100%"}, 500, function(){
